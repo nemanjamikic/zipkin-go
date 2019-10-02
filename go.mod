@@ -1,4 +1,4 @@
-module github.com/openzipkin/zipkin-go
+module github.com/nemanjamikic/zipkin-go
 
 require (
 	github.com/Shopify/sarama v1.19.0

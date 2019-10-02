@@ -1,4 +1,4 @@
-// Copyright 2019 The OpenZipkin Authors
+// Copyright 2019 The nemanjamikic Authors
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -21,11 +21,11 @@ import (
 	"testing"
 	"time"
 
-	zipkin "github.com/openzipkin/zipkin-go"
-	"github.com/openzipkin/zipkin-go/idgenerator"
-	"github.com/openzipkin/zipkin-go/model"
-	"github.com/openzipkin/zipkin-go/propagation"
-	"github.com/openzipkin/zipkin-go/propagation/b3"
+	zipkin "github.com/nemanjamikic/zipkin-go"
+	"github.com/nemanjamikic/zipkin-go/idgenerator"
+	"github.com/nemanjamikic/zipkin-go/model"
+	"github.com/nemanjamikic/zipkin-go/propagation"
+	"github.com/nemanjamikic/zipkin-go/propagation/b3"
 	"google.golang.org/grpc/metadata"
 )
 

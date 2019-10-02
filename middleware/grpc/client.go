@@ -1,4 +1,4 @@
-// Copyright 2019 The OpenZipkin Authors
+// Copyright 2019 The nemanjamikic Authors
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -20,9 +20,9 @@ import (
 	"google.golang.org/grpc/metadata"
 	"google.golang.org/grpc/stats"
 
-	"github.com/openzipkin/zipkin-go"
-	"github.com/openzipkin/zipkin-go/model"
-	"github.com/openzipkin/zipkin-go/propagation/b3"
+	"github.com/nemanjamikic/zipkin-go"
+	"github.com/nemanjamikic/zipkin-go/model"
+	"github.com/nemanjamikic/zipkin-go/propagation/b3"
 )
 
 type clientHandler struct {

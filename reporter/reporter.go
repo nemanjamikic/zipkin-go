@@ -1,4 +1,4 @@
-// Copyright 2019 The OpenZipkin Authors
+// Copyright 2019 The nemanjamikic Authors
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -21,7 +21,7 @@ reporter implementations.
 */
 package reporter
 
-import "github.com/openzipkin/zipkin-go/model"
+import "github.com/nemanjamikic/zipkin-go/model"
 
 // Reporter interface can be used to provide the Zipkin Tracer with custom
 // implementations to publish Zipkin Span data.

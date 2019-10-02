@@ -1,4 +1,4 @@
-// Copyright 2019 The OpenZipkin Authors
+// Copyright 2019 The nemanjamikic Authors
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -23,9 +23,9 @@ import (
 
 	"github.com/gorilla/mux"
 
-	zipkin "github.com/openzipkin/zipkin-go"
-	zipkinhttp "github.com/openzipkin/zipkin-go/middleware/http"
-	logreporter "github.com/openzipkin/zipkin-go/reporter/log"
+	zipkin "github.com/nemanjamikic/zipkin-go"
+	zipkinhttp "github.com/nemanjamikic/zipkin-go/middleware/http"
+	logreporter "github.com/nemanjamikic/zipkin-go/reporter/log"
 )
 
 func Example() {

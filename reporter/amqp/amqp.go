@@ -11,8 +11,8 @@ import (
 
 	"github.com/streadway/amqp"
 
-	"github.com/openzipkin/zipkin-go/model"
-	"github.com/openzipkin/zipkin-go/reporter"
+	"github.com/nemanjamikic/zipkin-go/model"
+	"github.com/nemanjamikic/zipkin-go/reporter"
 )
 
 // defaultRmqRoutingKey/Exchange/Kind sets the standard RabbitMQ queue our Reporter will publish on.
@@ -44,7 +44,7 @@ func Logger(logger *log.Logger) ReporterOption {
 }
 
 // Exchange sets the Exchange used to send messages (
-// see https://github.com/openzipkin/zipkin/tree/master/zipkin-collector/rabbitmq
+// see https://github.com/nemanjamikic/zipkin/tree/master/zipkin-collector/rabbitmq
 // if want to change default routing key or exchange
 func Exchange(exchange string) ReporterOption {
 	return func(c *rmqReporter) {

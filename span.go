@@ -1,4 +1,4 @@
-// Copyright 2019 The OpenZipkin Authors
+// Copyright 2019 The nemanjamikic Authors
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@ package zipkin
 import (
 	"time"
 
-	"github.com/openzipkin/zipkin-go/model"
+	"github.com/nemanjamikic/zipkin-go/model"
 )
 
 // Span interface as returned by Tracer.StartSpan()

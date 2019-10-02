@@ -1,4 +1,4 @@
-// Copyright 2019 The OpenZipkin Authors
+// Copyright 2019 The nemanjamikic Authors
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -23,10 +23,10 @@ import (
 	"log"
 
 	"github.com/Shopify/sarama"
-	"github.com/openzipkin/zipkin-go/model"
-	zipkin_proto3 "github.com/openzipkin/zipkin-go/proto/v2"
-	"github.com/openzipkin/zipkin-go/reporter"
-	"github.com/openzipkin/zipkin-go/reporter/kafka"
+	"github.com/nemanjamikic/zipkin-go/model"
+	zipkin_proto3 "github.com/nemanjamikic/zipkin-go/proto/v2"
+	"github.com/nemanjamikic/zipkin-go/reporter"
+	"github.com/nemanjamikic/zipkin-go/reporter/kafka"
 )
 
 type stubProducer struct {

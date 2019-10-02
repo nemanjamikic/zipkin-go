@@ -1,4 +1,4 @@
-// Copyright 2019 The OpenZipkin Authors
+// Copyright 2019 The nemanjamikic Authors
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -27,7 +27,7 @@ import (
 
 	"github.com/golang/protobuf/proto"
 
-	zipkinmodel "github.com/openzipkin/zipkin-go/model"
+	zipkinmodel "github.com/nemanjamikic/zipkin-go/model"
 )
 
 // ParseSpans parses zipkinmodel.SpanModel values from data serialized by Protobuf3.

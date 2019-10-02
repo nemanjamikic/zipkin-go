@@ -1,4 +1,4 @@
-// Copyright 2019 The OpenZipkin Authors
+// Copyright 2019 The nemanjamikic Authors
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -21,9 +21,9 @@ import (
 	"strconv"
 	"testing"
 
-	zipkin "github.com/openzipkin/zipkin-go"
-	mw "github.com/openzipkin/zipkin-go/middleware/http"
-	"github.com/openzipkin/zipkin-go/reporter/recorder"
+	zipkin "github.com/nemanjamikic/zipkin-go"
+	mw "github.com/nemanjamikic/zipkin-go/middleware/http"
+	"github.com/nemanjamikic/zipkin-go/reporter/recorder"
 )
 
 var (

@@ -1,19 +1,19 @@
 # Zipkin Library for Go
 
-[![Travis CI](https://travis-ci.org/openzipkin/zipkin-go.svg?branch=master)](https://travis-ci.org/openzipkin/zipkin-go)
-[![CircleCI](https://circleci.com/gh/openzipkin/zipkin-go.svg?style=shield)](https://circleci.com/gh/openzipkin/zipkin-go)
+[![Travis CI](https://travis-ci.org/nemanjamikic/zipkin-go.svg?branch=master)](https://travis-ci.org/nemanjamikic/zipkin-go)
+[![CircleCI](https://circleci.com/gh/nemanjamikic/zipkin-go.svg?style=shield)](https://circleci.com/gh/nemanjamikic/zipkin-go)
 [![Appveyor CI](https://ci.appveyor.com/api/projects/status/1d0e5k96g10ajl63/branch/master?svg=true)](https://ci.appveyor.com/project/basvanbeek/zipkin-go)
-[![Coverage Status](https://img.shields.io/coveralls/github/openzipkin/zipkin-go.svg)](https://coveralls.io/github/openzipkin/zipkin-go?branch=master)
-[![Go Report Card](https://goreportcard.com/badge/github.com/openzipkin/zipkin-go)](https://goreportcard.com/report/github.com/openzipkin/zipkin-go)
-[![GoDoc](https://godoc.org/github.com/openzipkin/zipkin-go?status.svg)](https://godoc.org/github.com/openzipkin/zipkin-go)
-[![Gitter chat](https://badges.gitter.im/openzipkin/zipkin.svg)](https://gitter.im/openzipkin/zipkin?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![Sourcegraph](https://sourcegraph.com/github.com/openzipkin/zipkin-go/-/badge.svg)](https://sourcegraph.com/github.com/openzipkin/zipkin-go?badge)
+[![Coverage Status](https://img.shields.io/coveralls/github/nemanjamikic/zipkin-go.svg)](https://coveralls.io/github/nemanjamikic/zipkin-go?branch=master)
+[![Go Report Card](https://goreportcard.com/badge/github.com/nemanjamikic/zipkin-go)](https://goreportcard.com/report/github.com/nemanjamikic/zipkin-go)
+[![GoDoc](https://godoc.org/github.com/nemanjamikic/zipkin-go?status.svg)](https://godoc.org/github.com/nemanjamikic/zipkin-go)
+[![Gitter chat](https://badges.gitter.im/nemanjamikic/zipkin.svg)](https://gitter.im/nemanjamikic/zipkin?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Sourcegraph](https://sourcegraph.com/github.com/nemanjamikic/zipkin-go/-/badge.svg)](https://sourcegraph.com/github.com/nemanjamikic/zipkin-go?badge)
 
 Zipkin Go is the official Go Tracer implementation for Zipkin, supported by the
-OpenZipkin community.
+nemanjamikic community.
 
 ## package organization
-`zipkin-go` is built with interoperability in mind within the OpenZipkin
+`zipkin-go` is built with interoperability in mind within the nemanjamikic
 community and even 3rd parties, the library consists of several packages.
 
 The main tracing implementation can be found in the root folder of this
@@ -63,7 +63,7 @@ For a server, pass `NewServerHandler` when calling `NewServer`, e.g.,
 ```go
 import (
 	"google.golang.org/grpc"
-	zipkingrpc "github.com/openzipkin/zipkin-go/middleware/grpc"
+	zipkingrpc "github.com/nemanjamikic/zipkin-go/middleware/grpc"
 )
 
 server = grpc.NewServer(grpc.StatsHandler(zipkingrpc.NewServerHandler(tracer)))
@@ -74,7 +74,7 @@ For a client, pass `NewClientHandler` when calling `Dial`, e.g.,
 ```go
 import (
 	"google.golang.org/grpc"
-	zipkingrpc "github.com/openzipkin/zipkin-go/middleware/grpc"
+	zipkingrpc "github.com/nemanjamikic/zipkin-go/middleware/grpc"
 )
 
 conn, err = grpc.Dial(addr, grpc.WithStatsHandler(zipkingrpc.NewClientHandler(tracer)))

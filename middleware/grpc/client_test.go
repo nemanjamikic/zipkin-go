@@ -1,4 +1,4 @@
-// Copyright 2019 The OpenZipkin Authors
+// Copyright 2019 The nemanjamikic Authors
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -22,12 +22,12 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/metadata"
 
-	"github.com/openzipkin/zipkin-go"
-	zipkingrpc "github.com/openzipkin/zipkin-go/middleware/grpc"
-	"github.com/openzipkin/zipkin-go/model"
-	"github.com/openzipkin/zipkin-go/propagation/b3"
-	service "github.com/openzipkin/zipkin-go/proto/testing"
-	"github.com/openzipkin/zipkin-go/reporter/recorder"
+	"github.com/nemanjamikic/zipkin-go"
+	zipkingrpc "github.com/nemanjamikic/zipkin-go/middleware/grpc"
+	"github.com/nemanjamikic/zipkin-go/model"
+	"github.com/nemanjamikic/zipkin-go/propagation/b3"
+	service "github.com/nemanjamikic/zipkin-go/proto/testing"
+	"github.com/nemanjamikic/zipkin-go/reporter/recorder"
 )
 
 var _ = ginkgo.Describe("gRPC Client", func() {

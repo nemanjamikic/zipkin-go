@@ -9,8 +9,8 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	zipkin "github.com/openzipkin/zipkin-go"
-	"github.com/openzipkin/zipkin-go/reporter/recorder"
+	zipkin "github.com/nemanjamikic/zipkin-go"
+	"github.com/nemanjamikic/zipkin-go/reporter/recorder"
 )
 
 type errRoundTripper struct {

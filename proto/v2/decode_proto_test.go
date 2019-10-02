@@ -1,4 +1,4 @@
-// Copyright 2019 The OpenZipkin Authors
+// Copyright 2019 The nemanjamikic Authors
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -25,8 +25,8 @@ import (
 
 	"github.com/golang/protobuf/proto"
 
-	zipkinmodel "github.com/openzipkin/zipkin-go/model"
-	zipkin_proto3 "github.com/openzipkin/zipkin-go/proto/v2"
+	zipkinmodel "github.com/nemanjamikic/zipkin-go/model"
+	zipkin_proto3 "github.com/nemanjamikic/zipkin-go/proto/v2"
 )
 
 func TestParseSpans(t *testing.T) {

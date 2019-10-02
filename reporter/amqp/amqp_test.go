@@ -7,8 +7,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/openzipkin/zipkin-go/model"
-	zipkinamqp "github.com/openzipkin/zipkin-go/reporter/amqp"
+	"github.com/nemanjamikic/zipkin-go/model"
+	zipkinamqp "github.com/nemanjamikic/zipkin-go/reporter/amqp"
 	"github.com/streadway/amqp"
 )
 

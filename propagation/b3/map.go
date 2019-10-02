@@ -1,4 +1,4 @@
-// Copyright 2019 The OpenZipkin Authors
+// Copyright 2019 The nemanjamikic Authors
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -15,8 +15,8 @@
 package b3
 
 import (
-	"github.com/openzipkin/zipkin-go/model"
-	"github.com/openzipkin/zipkin-go/propagation"
+	"github.com/nemanjamikic/zipkin-go/model"
+	"github.com/nemanjamikic/zipkin-go/propagation"
 )
 
 // Map allows serialization and deserialization of SpanContext into a standard Go map.
